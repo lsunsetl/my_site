@@ -9,38 +9,43 @@
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<style>
-		.headertop{width: 1200px;height: 80px;margin: 30px auto;}
-		 /*utilWrap*/
-		.util{width: 1200px;margin: 0 auto;}
-		.util{margin-left: auto; width:1200px;}
-		.utilMenu>li{float: left;}
-		.utilMenu>li:after{content:"";display: block;}
-		.utilMenu>li>a{display: block;padding: 0 30px;line-height: 30px;;}
+		.headertop{width: 1200px;margin: 0px auto;padding-top: 30px;}
+		.logo{width: 180px;float: left;}
+		.utilMenu{width:700px;float: left;}
+		.utilMenu li{float: left;}
+		.utilMenu>li a{display: block;padding-top:30px;line-height: 30px;}
+		.utilMenu1 {width: 300px;float: left;}
+		.utilMenu1>li{float: right;}
+		.utilMenu1>li>a{display: block;padding: 0 30px;line-height: 30px;}
+
 
 		/*visual*/
+		.visual li>{height: 300px;background-color: #fff;
+
+		}
 		.visual li>{float: left;}
 
 	</style>
 </head>
 <body>
 	<div class="headertop">
-		<h1 class="logo"><img src="images/c_logo.png" alt=""></h1>
-	      <div class="header">
-		     <div class="utilWrap">
-			    <div class="util">
-				<ul class="utilMenu clearfix">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">How It Works</a></li>
-					<li><a href="#">Company</a></li>
-					<li><a href="#">Career</a></li>
-					<li><a href="#">Sign in</a></li>
-					<li><a href="#">Register</a></li>
-				</ul>
-			</div>
+		 <div class="util clearfix">
+		    <h1 class="logo"><img src="images/c_logo.png" alt=""></h1>
+			<ul class="utilMenu clearfix">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">How It Works</a></li>
+				<li><a href="#">Company</a></li>
+				<li><a href="#">Career</a></li>
+				
+			</ul>
+			<ul class="utilMenu1 clearfix">
+				<li><a href="#">Sign in</a></li>
+				<li><a href="#">Register</a></li>
+			</ul>
 		</div>
-	 </div>
+
 	</div>
-	<div class="visual">
+	<div class="visual" style="display: none;">
 		<ul>
 			<li>Financial plans for<br>
 				every person and<br> 
