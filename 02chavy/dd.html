@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<style>
+		header#header{
+			width: 1100px; height: 50px;margin: 0 auto;
+			background-color:skyblue;
+		}
+		.box{width: 100px;height: 10px;background:red;}
+		.box1{width: 100px;height: 10px;background:pink;}
+		.visual{}
+		.visual .view{width: 1100px;margin: 0 auto;
+			position: relative;
+			height: 700px;
+		}
+		.visual .slider li{overflow: hidden;}
+		.visual .slider img.img{
+			_height: 770px;
+			position: absolute;
+			left: 50%;
+		}
+		.visual .visualTxt{
+			width: 500px;
+			position: absolute;top: 150px;}
+		.visual .visualTxt h3{font-style: 2.5em;margin-bottom: 20px;}
+		.visual .visualTxt p{margin-bottom: 20px;}
+		.visual .visualTxt a{
+			display: block;width: 200px;height: 60px;
+			background: #f00; color: white; border-radius: 40px; text-align: center;
+			line-height: 60px; 
+		}
+	</style>
+	<script>
+		$(document).ready(function(){
+			$(".slider").bxSlider();
+			});
+
+	</script>
+</head>
+<body>
+	<header id="header">
+		<div class="box"></div>
+		<div class="box1"></div>
+		
+	</header>
+	<div class="visual">
+		<ul class="slider">
+			<li><!-- w100% -->
+				<div class="view">
+					<img src="images/main_01.jpg" alt="" class="img">
+					<div class="visualTxt">
+						<h3>Lorem ipsum dolor sit.<br>
+							Lorem ipsum dolor sit amet,<br> 
+							consectetur adipisicing elit.
+						</h3>
+						<p>Lorem ipsum dolor sit amet, 
+						consectetur adipisicing elit. 
+						Quod, amet.</p>
+						<a href="#" class="btnA">Request</a>
+					</div>
+				</div>
+			</li>
+			<li><!-- w100% -->
+				<div class="view">
+					<img src="images/main_01.jpg" alt=""class="img">
+				</div>
+			</li>
+		</ul>
+	</div>
+</html>
